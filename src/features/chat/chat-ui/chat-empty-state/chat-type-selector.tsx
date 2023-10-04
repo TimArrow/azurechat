@@ -22,15 +22,15 @@ export const ChatTypeSelector: FC<Prop> = (props) => {
           className="flex gap-2"
           disabled={props.disable}
         >
-          <MessageCircle size={20} /> General
+          <MessageCircle size={20} /> Allgemein
         </TabsTrigger>
-        <TabsTrigger
+       {/*} <TabsTrigger
           value="data"
           className="flex gap-2"
           disabled={props.disable}
         >
           <FileText size={20} /> File
-        </TabsTrigger>
+  </TabsTrigger>*/}
       </TabsList>
     </Tabs>
   );

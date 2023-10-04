@@ -2,15 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+{/*
+This code snippet is defining CSS variables for a dark theme. Each variable represents a specific color used in the theme. 
+
+background: The background color of the theme.
+foreground: The foreground color, typically used for text.
+card: The color of card elements.
+card-foreground: The foreground color of card elements.
+popover: The color of popover elements.
+popover-foreground: The foreground color of popover elements.
+primary: The primary color used in the theme.
+primary-foreground: The foreground color for elements using the primary color.
+secondary: The secondary color used in the theme.
+secondary-foreground: The foreground color for elements using the secondary color.
+muted: A muted color used in the theme.
+muted-foreground: The foreground color for elements using the muted color.
+accent: An accent color used in the theme.
+accent-foreground: The foreground color for elements using the accent color.
+destructive: A color used for destructive actions.
+destructive-foreground: The foreground color for elements using the destructive color.
+border: The color of borders in the theme.
+input: The color of input elements.
+ring: The color of ring elements.
+
+These variables can be used throughout the CSS code to easily apply consistent colors to different elements in the dark theme.
+
+The values used in the CSS variables represent colors in the HSL (Hue, Saturation, Lightness) color model. 
+In the HSL color model, the values have the following meanings:
+
+- Hue (H): Represents the color itself. It ranges from 0 to 360 degrees, where 0 represents red, 120 represents green, and 240 represents blue.
+- Saturation (S): Represents the intensity or purity of the color. It ranges from 0% to 100%, where 0% is completely desaturated (grayscale) and 100% is fully saturated (vibrant).
+- Lightness (L): Represents the brightness of the color. It ranges from 0% to 100%, where 0% is completely black and 100% is completely white.
+
+For example, in the variable primary, the value 205 90% 30% represents a color with a hue of 205 degrees (a bluish color), a saturation of 90% (fairly saturated), and a lightness of 30% (relatively dark).
+By using the HSL color model, you can easily adjust the hue, saturation, and lightness values to create different shades and variations of colors within your theme.
+*/}
+
 @layer base {
   :root {
+    /* Default theme */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 170 90% 29%;
+    --primary: 205 90% 29%;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -22,18 +61,19 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 170 90% 29%;
+    --ring: 205 90% 29%;
     --radius: 0.5rem;
   }
 
   .dark {
+    /* Dark theme */
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 169 74% 22%;
+    --primary: 205 90% 30%;
     --primary-foreground: 240 5.9% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -45,7 +85,117 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 169 74% 22%;
+    --ring: 205 100% 35%;
+  }
+
+  .softblue {
+    --background: 210 60% 95%;
+    --foreground: 210 20% 20%;
+    --card: 210 60% 90%;
+    --card-foreground: 210 20% 25%;
+    --popover: 210 60% 90%;
+    --popover-foreground: 210 20% 25%;
+    --primary: 210 60% 50%;
+    --primary-foreground: 210 20% 60%;
+    --secondary: 210 60% 80%;
+    --secondary-foreground: 210 20% 30%;
+    --muted: 210 60% 85%;
+    --muted-foreground: 210 20% 35%;
+    --accent: 210 60% 70%;
+    --accent-foreground: 210 20% 40%;
+    --destructive: 210 60% 55%;
+    --destructive-foreground: 210 20% 45%;
+    --border: 210 60% 80%;
+    --input: 210 60% 80%;
+    --ring: 210 60% 50%;
+  }
+
+  .gentlegreen {
+    --background: 120 40% 95%;
+    --foreground: 120 30% 20%;
+    --card: 120 40% 90%;
+    --card-foreground: 120 30% 25%;
+    --popover: 120 40% 90%;
+    --popover-foreground: 120 30% 25%;
+    --primary: 120 40% 50%;
+    --primary-foreground: 120 30% 60%;
+    --secondary: 120 40% 80%;
+    --secondary-foreground: 120 30% 30%;
+    --muted: 120 40% 85%;
+    --muted-foreground: 120 30% 35%;
+    --accent: 120 40% 70%;
+    --accent-foreground: 120 30% 40%;
+    --destructive: 120 40% 55%;
+    --destructive-foreground: 120 30% 45%;
+    --border: 120 40% 80%;
+    --input: 120 40% 80%;
+    --ring: 120 40% 50%;
+  }
+
+  .warmorange {
+    --background: 30 70% 95%;
+    --foreground: 30 60% 20%;
+    --card: 30 70% 90%;
+    --card-foreground: 30 60% 25%;
+    --popover: 30 70% 90%;
+    --popover-foreground: 30 60% 25%;
+    --primary: 30 70% 50%;
+    --primary-foreground: 30 60% 60%;
+    --secondary: 30 70% 80%;
+    --secondary-foreground: 30 60% 30%;
+    --muted: 30 70% 85%;
+    --muted-foreground: 30 60% 35%;
+    --accent: 30 70% 70%;
+    --accent-foreground: 30 60% 40%;
+    --destructive: 30 70% 55%;
+    --destructive-foreground: 30 60% 45%;
+    --border: 30 70% 80%;
+    --input: 30 70% 80%;
+    --ring: 30 70% 50%;
+  }
+
+  .calmpurple {
+    --background: 270 50% 95%;
+    --foreground: 270 40% 20%;
+    --card: 270 50% 90%;
+    --card-foreground: 270 40% 25%;
+    --popover: 270 50% 90%;
+    --popover-foreground: 270 40% 25%;
+    --primary: 270 50% 50%;
+    --primary-foreground: 270 40% 60%;
+    --secondary: 270 50% 80%;
+    --secondary-foreground: 270 40% 30%;
+    --muted: 270 50% 85%;
+    --muted-foreground: 270 40% 35%;
+    --accent: 270 50% 70%;
+    --accent-foreground: 270 40% 40%;
+    --destructive: 270 50% 55%;
+    --destructive-foreground: 270 40% 45%;
+    --border: 270 50% 80%;
+    --input: 270 50% 80%;
+    --ring: 270 50% 50%;
+  }
+
+  .refreshingteal {
+    --background: 180 55% 95%;
+    --foreground: 180 45% 20%;
+    --card: 180 55% 90%;
+    --card-foreground: 180 45% 25%;
+    --popover: 180 55% 90%;
+    --popover-foreground: 180 45% 25%;
+    --primary: 180 55% 50%;
+    --primary-foreground: 180 45% 60%;
+    --secondary: 180 55% 80%;
+    --secondary-foreground: 180 45% 30%;
+    --muted: 180 55% 85%;
+    --muted-foreground: 180 45% 35%;
+    --accent: 180 55% 70%;
+    --accent-foreground: 180 45% 40%;
+    --destructive: 180 55% 55%;
+    --destructive-foreground: 180 45% 45%;
+    --border: 180 55% 80%;
+    --input: 180 55% 80%;
+    --ring: 180 55% 50%;
   }
 }
 

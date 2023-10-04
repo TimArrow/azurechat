@@ -1,6 +1,6 @@
 "use client";
 
-import { Laptop2, Moon, Sun } from "lucide-react";
+import { Laptop2, Moon, Sun, Waves, TreePine, SunDim, Sofa, Sparkles } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Tabs, TabsList, TabsTrigger } from "../../components/ui/tabs";
@@ -26,6 +26,41 @@ export function ThemeToggle() {
           className="h-[40px] w-[40px]  rounded-full"
         >
           <Moon size={18} />
+        </TabsTrigger>
+        <TabsTrigger
+          value="softblue"
+          onClick={() => setTheme("softblue")}
+          className="h-[40px] w-[40px]  rounded-full"
+        >
+          <Waves size={18} />
+        </TabsTrigger>
+        <TabsTrigger
+          value="gentlegreen"
+          onClick={() => setTheme("gentlegreen")}
+          className="h-[40px] w-[40px]  rounded-full"
+        >
+          <TreePine size={18} />
+        </TabsTrigger>
+        <TabsTrigger
+          value="warmorange"
+          onClick={() => setTheme("warmorange")}
+          className="h-[40px] w-[40px]  rounded-full"
+        >
+          <SunDim size={18} />
+        </TabsTrigger>
+        <TabsTrigger
+          value="calmpurple"
+          onClick={() => setTheme("calmpurple")}
+          className="h-[40px] w-[40px]  rounded-full"
+        >
+          <Sofa size={18} />
+        </TabsTrigger>
+        <TabsTrigger
+          value="refreshingteal"
+          onClick={() => setTheme("refreshingteal")}
+          className="h-[40px] w-[40px]  rounded-full"
+        >
+          <Sparkles size={18} />
         </TabsTrigger>
         <TabsTrigger
           value="system"
